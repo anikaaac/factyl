@@ -9,13 +9,28 @@ import UIKit
 
 class loginViewController: UIViewController {
 
+
+    @IBOutlet weak var error: UILabel!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var user: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func loginButton(_ sender: Any) {
+        if password.text!.count == 0 || user.text!.count == 0{
+            error.text = "*error: missing fields"
+        }else{
+            performSegue(withIdentifier: "loggedIn", sender: Any?.self)
+            }
+    }
+    
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +41,4 @@ class loginViewController: UIViewController {
     }
     */
 
-}
+
