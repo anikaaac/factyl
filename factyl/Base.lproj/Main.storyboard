@@ -102,7 +102,7 @@
                                     <color key="baseBackgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="C1Y-dS-UaI" kind="presentation" modalPresentationStyle="fullScreen" id="ph6-8s-iTJ"/>
+                                    <segue destination="C1Y-dS-UaI" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ph6-8s-iTJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-0f-Xo4">
@@ -592,7 +592,7 @@
                                             <barButtonItem title="Item" image="homekit" catalog="system" style="plain" id="ws5-rZ-OzX">
                                                 <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
-                                                    <segue destination="9l3-go-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="kRF-7j-Gw0"/>
+                                                    <segue destination="9l3-go-K5h" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kRF-7j-Gw0"/>
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem width="4" style="plain" systemItem="add" id="hXW-FO-Dc8">
@@ -603,7 +603,7 @@
                                             <barButtonItem title="Item" image="person.fill" catalog="system" style="plain" id="NyP-M7-drj">
                                                 <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="oEd-rJ-jQV"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="oEd-rJ-jQV"/>
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem title="Item" image="questionmark.circle.fill" catalog="system" style="plain" id="3BD-gL-2hL">
@@ -646,6 +646,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="90R-xi-mq0"/>
         <segue reference="VYQ-zj-Mvc"/>
         <segue reference="91S-oZ-JuC"/>
     </inferredMetricsTieBreakers>

@@ -16,6 +16,8 @@
 		BDBE6A3C28872A500010C972 /* factyl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDBE6A3A28872A500010C972 /* factyl.xcdatamodeld */; };
 		BDBE6A3E28872A520010C972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBE6A3D28872A520010C972 /* Assets.xcassets */; };
 		BDBE6A4128872A520010C972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDBE6A3F28872A520010C972 /* LaunchScreen.storyboard */; };
+		BDF308B928889D5900D6D88A /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF308B828889D5900D6D88A /* loginViewController.swift */; };
+		BDF308BB28889DB000D6D88A /* financeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF308BA28889DB000D6D88A /* financeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BDBE6A3D28872A520010C972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDBE6A4028872A520010C972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDBE6A4228872A520010C972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF308B828889D5900D6D88A /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		BDF308BA28889DB000D6D88A /* financeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				BDBE6A3528872A500010C972 /* ViewController.swift */,
 				BDBE6A3728872A500010C972 /* Main.storyboard */,
 				BD267E932887673A00B8740F /* topicsViewController.swift */,
+				BDF308B828889D5900D6D88A /* loginViewController.swift */,
+				BDF308BA28889DB000D6D88A /* financeViewController.swift */,
 				BDBE6A3D28872A520010C972 /* Assets.xcassets */,
 				BD562A5028886246007A0A04 /* manrope.ttf */,
 				BDBE6A3F28872A520010C972 /* LaunchScreen.storyboard */,
@@ -150,6 +156,8 @@
 			files = (
 				BDBE6A3628872A500010C972 /* ViewController.swift in Sources */,
 				BDBE6A3228872A500010C972 /* AppDelegate.swift in Sources */,
+				BDF308B928889D5900D6D88A /* loginViewController.swift in Sources */,
+				BDF308BB28889DB000D6D88A /* financeViewController.swift in Sources */,
 				BDBE6A3C28872A500010C972 /* factyl.xcdatamodeld in Sources */,
 				BDBE6A3428872A500010C972 /* SceneDelegate.swift in Sources */,
 				BD267E942887673A00B8740F /* topicsViewController.swift in Sources */,
