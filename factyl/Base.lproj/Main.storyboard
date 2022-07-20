@@ -32,7 +32,7 @@
                                     <color key="baseBackgroundColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="9l3-go-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="e7D-8P-7cf"/>
+                                    <segue destination="9l3-go-K5h" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="e7D-8P-7cf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJY-u7-7EO">
@@ -43,7 +43,7 @@
                                     <color key="baseBackgroundColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="WHq-xH-5d2" kind="presentation" modalPresentationStyle="fullScreen" id="bGN-98-B70"/>
+                                    <segue destination="WHq-xH-5d2" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="bGN-98-B70"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="who are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEf-bn-xm2">
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqF-hN-tdx">
-                                <rect key="frame" x="43" y="316" width="329" height="100"/>
+                                <rect key="frame" x="43" y="328" width="329" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -103,7 +103,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-0f-Xo4">
-                                <rect key="frame" x="43" y="448" width="329" height="100"/>
+                                <rect key="frame" x="43" y="460" width="329" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -120,7 +120,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvw-xj-K0D">
-                                <rect key="frame" x="43" y="588" width="329" height="100"/>
+                                <rect key="frame" x="43" y="600" width="329" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -137,7 +137,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIC-G2-dkn">
-                                <rect key="frame" x="43" y="725" width="329" height="100"/>
+                                <rect key="frame" x="43" y="737" width="329" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -154,7 +154,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqX-yy-0ZD">
-                                <rect key="frame" x="43" y="183" width="329" height="100"/>
+                                <rect key="frame" x="43" y="195" width="329" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="dynamic">
@@ -170,17 +170,28 @@
                                     <color key="baseBackgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="pRM-XF-RoH" kind="presentation" modalPresentationStyle="fullScreen" id="90R-xi-mq0"/>
+                                    <segue destination="pRM-XF-RoH" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="90R-xi-mq0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="topics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4y-L4-Fas">
-                                <rect key="frame" x="43" y="78" width="329" height="71"/>
+                                <rect key="frame" x="43" y="90" width="329" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG9-kv-WVr">
+                                <rect key="frame" x="12" y="31" width="55" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                    <color key="baseForegroundColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lQB-RI-Be1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wVX-e2-5h3"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -303,7 +314,7 @@
                                         <leftBarButtonItems>
                                             <barButtonItem title="Item" image="homekit" catalog="system" style="plain" id="VjC-yM-OfC">
                                                 <connections>
-                                                    <segue destination="9l3-go-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="VYQ-zj-Mvc"/>
+                                                    <segue destination="9l3-go-K5h" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VYQ-zj-Mvc"/>
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem width="4" style="plain" systemItem="add" id="sQe-Rd-tao"/>
@@ -311,7 +322,7 @@
                                         <rightBarButtonItems>
                                             <barButtonItem title="Item" image="person.fill" catalog="system" style="plain" id="gZw-83-1CJ">
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="91S-oZ-JuC"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="91S-oZ-JuC"/>
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem title="Item" image="questionmark.circle.fill" catalog="system" style="plain" id="bAw-bK-YtW"/>
@@ -440,7 +451,7 @@
                                     <color key="baseForegroundColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="v4U-0U-t9V"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="v4U-0U-t9V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -455,8 +466,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="90R-xi-mq0"/>
         <segue reference="VYQ-zj-Mvc"/>
-        <segue reference="v4U-0U-t9V"/>
+        <segue reference="lQB-RI-Be1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
