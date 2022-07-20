@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD267E942887673A00B8740F /* topicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD267E932887673A00B8740F /* topicsViewController.swift */; };
+		BD562A5128886246007A0A04 /* manrope.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD562A5028886246007A0A04 /* manrope.ttf */; };
 		BDBE6A3228872A500010C972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE6A3128872A500010C972 /* AppDelegate.swift */; };
 		BDBE6A3428872A500010C972 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE6A3328872A500010C972 /* SceneDelegate.swift */; };
 		BDBE6A3628872A500010C972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE6A3528872A500010C972 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		BD267E932887673A00B8740F /* topicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topicsViewController.swift; sourceTree = "<group>"; };
+		BD562A5028886246007A0A04 /* manrope.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = manrope.ttf; sourceTree = "<group>"; };
 		BDBE6A2E28872A500010C972 /* factyl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = factyl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBE6A3128872A500010C972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDBE6A3328872A500010C972 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				BDBE6A3728872A500010C972 /* Main.storyboard */,
 				BD267E932887673A00B8740F /* topicsViewController.swift */,
 				BDBE6A3D28872A520010C972 /* Assets.xcassets */,
+				BD562A5028886246007A0A04 /* manrope.ttf */,
 				BDBE6A3F28872A520010C972 /* LaunchScreen.storyboard */,
 				BDBE6A4228872A520010C972 /* Info.plist */,
 				BDBE6A3A28872A500010C972 /* factyl.xcdatamodeld */,
@@ -133,6 +136,7 @@
 			files = (
 				BDBE6A4128872A520010C972 /* LaunchScreen.storyboard in Resources */,
 				BDBE6A3E28872A520010C972 /* Assets.xcassets in Resources */,
+				BD562A5128886246007A0A04 /* manrope.ttf in Resources */,
 				BDBE6A3928872A500010C972 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
