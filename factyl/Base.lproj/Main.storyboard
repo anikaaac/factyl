@@ -373,12 +373,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="by9-4O-eAC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrowshape.turn.up.right.fill" catalog="system" id="evH-sj-pL8">
-                    <rect key="frame" x="0.0" y="0.0" width="23" height="22"/>
+                    <rect key="frame" x="0.0" y="0.5" width="23" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrowshape.turn.up.right.fill" catalog="system" id="qPm-eE-gEJ">
-                    <rect key="frame" x="0.0" y="0.0" width="23" height="22"/>
+                    <rect key="frame" x="0.0" y="0.5" width="23" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
