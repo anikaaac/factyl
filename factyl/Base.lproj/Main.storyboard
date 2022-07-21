@@ -460,7 +460,7 @@
                                 <color key="textColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-UY-jmZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-UY-jmZ">
                                 <rect key="frame" x="43" y="87" width="329" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -933,7 +933,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="bGN-98-B70"/>
         <segue reference="221-Kd-jcm"/>
-        <segue reference="90R-xi-mq0"/>
+        <segue reference="z30-rX-pO2"/>
         <segue reference="VYQ-zj-Mvc"/>
         <segue reference="91S-oZ-JuC"/>
     </inferredMetricsTieBreakers>

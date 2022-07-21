@@ -33,11 +33,14 @@ class financeViewController: UIViewController {
                     faq = coreDataFaqs
             }
         }
-        button1.setTitle(faq[1].question, for: .normal)
-        button2.setTitle(faq[2].question, for: .normal)
-        button3.setTitle(faq[3].question, for: .normal)
-        button4.setTitle(faq[4].question, for: .normal)
-        button5.setTitle(faq[8].question, for: .normal)
+        if faq.count >= 5 {
+            button1.setTitle(faq[0].question, for: .normal)
+            button2.setTitle(faq[1].question, for: .normal)
+            button3.setTitle(faq[2].question, for: .normal)
+            button4.setTitle(faq[3].question, for: .normal)
+            button5.setTitle(faq[4].question, for: .normal)
+        }
+            
     }
     
 
@@ -89,32 +92,32 @@ class financeViewController: UIViewController {
     
 //buttons
     @IBAction func firstButton(_ sender: Any) {
-        firstQuestion = faq[1].question!
+        firstQuestion = faq[0].question!
         firstAnswer = "Keep track of your spending. If you know where your money is going it will be easier to make changes if you need to. Try using BALANCE's Fritter Finder form for a week or two to find out where your money is going. Separate wants from needs. Do you really need that 42-inch flat screen television? When money is tight it should not be spent unless absolutely necessary. Avoid using credit to pay your bills. While it may make things easier now, using credit only increases your monthly payments in the future. Save regularly."
     }
     
     @IBAction func secondButton(_ sender: Any) {
-        firstQuestion = faq[2].question!
+        firstQuestion = faq[1].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
         
     }
     
     @IBAction func thirdButton(_ sender: Any) {
-        firstQuestion = faq[3].question!
+        firstQuestion = faq[2].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
     }
     
     @IBAction func fourthButton(_ sender: Any) {
-        firstQuestion = faq[4].question!
+        firstQuestion = faq[3].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
         
     }
     
     @IBAction func fifthButton(_ sender: Any) {
-        firstQuestion = faq[8].question!
+        firstQuestion = faq[4].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
         
