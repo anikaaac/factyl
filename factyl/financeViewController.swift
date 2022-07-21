@@ -33,14 +33,11 @@ class financeViewController: UIViewController {
                     faq = coreDataFaqs
             }
         }
-        if faq.count >= 5 {
-            button1.setTitle(faq[0].question, for: .normal)
-            button2.setTitle(faq[1].question, for: .normal)
-            button3.setTitle(faq[2].question, for: .normal)
-            button4.setTitle(faq[3].question, for: .normal)
-            button5.setTitle(faq[4].question, for: .normal)
-        }
-            
+        faq[0].question = "how do you save?"
+        faq[1].question = "what is a decent budget for you?"
+        faq[2].question = "how much would you spend on stocks?"
+        faq[3].question = "how has your experience been on the stock market?"
+        faq[4].question = "how much have you earned this past year?"
     }
     
 

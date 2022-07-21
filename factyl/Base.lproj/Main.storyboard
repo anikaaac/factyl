@@ -238,25 +238,6 @@
                                     <action selector="secondButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="BOC-or-yb4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="26N-Kf-fDq">
-                                <rect key="frame" x="85" y="428" width="222" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="how much would spend on stocks?">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Manrope-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="thirdButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="TOZ-XU-bpW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-cj-d1R">
                                 <rect key="frame" x="57" y="748" width="292" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -382,6 +363,25 @@
                                     <action selector="fourthButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="kE7-Pd-gsr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="26N-Kf-fDq">
+                                <rect key="frame" x="70" y="436" width="257" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="how much would you spend on stocks?">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Manrope-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="thirdButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="TOZ-XU-bpW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ViH-Cm-S2U"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -407,7 +407,7 @@
                     <color key="tintColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="2057" y="84"/>
+            <point key="canvasLocation" x="2056.521739130435" y="83.705357142857139"/>
         </scene>
         <!--Answers View Controller-->
         <scene sceneID="5Uw-0x-FpN">
