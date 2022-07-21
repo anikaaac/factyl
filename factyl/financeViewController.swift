@@ -33,13 +33,11 @@ class financeViewController: UIViewController {
                     faq = coreDataFaqs
             }
         }
-        
         button1.setTitle(faq[1].question, for: .normal)
         button2.setTitle(faq[2].question, for: .normal)
         button3.setTitle(faq[3].question, for: .normal)
         button4.setTitle(faq[4].question, for: .normal)
         button5.setTitle(faq[8].question, for: .normal)
-    
     }
     
 
