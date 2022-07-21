@@ -339,6 +339,9 @@
                                             </barButtonItem>
                                             <barButtonItem width="4" style="plain" systemItem="add" id="sQe-Rd-tao">
                                                 <color key="tintColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="addQuestion:" destination="pRM-XF-RoH" id="DrQ-qb-zX5"/>
+                                                </connections>
                                             </barButtonItem>
                                         </leftBarButtonItems>
                                         <rightBarButtonItems>
@@ -384,6 +387,11 @@
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="button1" destination="gxg-0N-hBe" id="ApL-L6-Ekl"/>
+                        <outlet property="button2" destination="ExF-zN-xKG" id="ere-1D-P4F"/>
+                        <outlet property="button3" destination="26N-Kf-fDq" id="un9-S9-hfK"/>
+                        <outlet property="button4" destination="Q2d-qW-GRX" id="aoY-c6-8Ya"/>
+                        <outlet property="button5" destination="wL3-cj-d1R" id="hMl-O4-V0d"/>
                         <segue destination="uYN-OY-eAV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="4G9-VH-NGG"/>
                     </connections>
                 </viewController>
@@ -925,8 +933,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="bGN-98-B70"/>
         <segue reference="221-Kd-jcm"/>
-        <segue reference="z30-rX-pO2"/>
-        <segue reference="e7D-8P-7cf"/>
+        <segue reference="90R-xi-mq0"/>
+        <segue reference="VYQ-zj-Mvc"/>
         <segue reference="91S-oZ-JuC"/>
     </inferredMetricsTieBreakers>
     <resources>
