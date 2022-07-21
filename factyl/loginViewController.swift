@@ -24,8 +24,12 @@ class loginViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         if password.text!.count == 0 || user.text!.count == 0{
             error.text = "*error: missing fields"
-        }else{
+        }
+        else if password.text! == "manropekwk22" && user.text! == "financeperson"{
             performSegue(withIdentifier: "loggedIn", sender: Any?.self)
+        }
+        else{
+            error.text = "username or password does not exist"
             }
     }
     
