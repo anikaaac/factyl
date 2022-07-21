@@ -435,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNh-X8-Zez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3015.9420289855075" y="62.946428571428569"/>
+            <point key="canvasLocation" x="3017" y="84"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="cga-cE-3gU">
@@ -667,14 +667,9 @@
                                 <color key="barTintColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="finance" id="lko-Zt-DpZ">
-                                        <leftBarButtonItems>
-                                            <barButtonItem title="Item" image="homekit" catalog="system" style="plain" id="2Ze-71-JYH">
-                                                <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </barButtonItem>
-                                            <barButtonItem width="4" style="plain" systemItem="add" id="Bkw-ID-yMc">
-                                                <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </barButtonItem>
-                                        </leftBarButtonItems>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="homekit" catalog="system" style="plain" id="2Ze-71-JYH">
+                                            <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="person.fill" catalog="system" style="plain" id="eF4-HO-27f">
                                             <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </barButtonItem>
