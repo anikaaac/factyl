@@ -39,8 +39,7 @@ class financeViewController: UIViewController {
         button3.setTitle(faq[3].question, for: .normal)
         button4.setTitle(faq[4].question, for: .normal)
         button5.setTitle(faq[8].question, for: .normal)
-        print("this is subnmitted " + faq[6].question!)
-        print(faq[7].question!)
+    
     }
     
 
