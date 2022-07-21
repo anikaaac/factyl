@@ -19,11 +19,13 @@ class financeViewController: UIViewController {
     @IBOutlet weak var button4: UIButton!
     @IBOutlet weak var button5: UIButton!
     
+    @IBOutlet weak var pageNumber: UILabel!
     
     let textView = UITextView(frame: CGRect.zero)
     
     var faq : [FaqCD] = []
     var enteredText = ""
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +35,12 @@ class financeViewController: UIViewController {
                     faq = coreDataFaqs
             }
         }
-        faq[0].question = "how do you save?"
-        faq[1].question = "what is a decent budget for you?"
-        faq[2].question = "how much would you spend on stocks?"
-        faq[3].question = "how has your experience been on the stock market?"
-        faq[4].question = "how much have you earned this past year?"
+        faq[0].question = ""
+        faq[1].question = "how do you save?"
+        faq[2].question = "what is a decent budget for you?"
+        faq[3].question = "how much would you spend on stocks?"
+        faq[4].question = "how has your experience been on the stock market?"
+        faq[5].question = "how much have you earned this past year?"
     }
     
 
@@ -85,36 +88,55 @@ class financeViewController: UIViewController {
             }
         }
     }
+
     
+    //buttons
     
-//buttons
+    @IBAction func rightButton(_ sender: Any) {
+        counter += 1
+        pageNumber.text = String(counter + 1)
+    }
+    
+    @IBAction func backButton(_ sender: Any) {
+        counter -= 1
+        pageNumber.text = String(counter + 1)
+    }
+    
+    func faqNumber(num: Int) -> Int{
+        var page = num + (counter * 5)
+        if faq.count <= page{
+            page = 0
+        }
+        return(page)
+    }
+    
     @IBAction func firstButton(_ sender: Any) {
-        firstQuestion = faq[0].question!
+        firstQuestion = faq[faqNumber(num: 1)].question!
         firstAnswer = "Keep track of your spending. If you know where your money is going it will be easier to make changes if you need to. Try using BALANCE's Fritter Finder form for a week or two to find out where your money is going. Separate wants from needs. Do you really need that 42-inch flat screen television? When money is tight it should not be spent unless absolutely necessary. Avoid using credit to pay your bills. While it may make things easier now, using credit only increases your monthly payments in the future. Save regularly."
     }
     
     @IBAction func secondButton(_ sender: Any) {
-        firstQuestion = faq[1].question!
+        firstQuestion = faq[faqNumber(num:2)].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
         
     }
     
     @IBAction func thirdButton(_ sender: Any) {
-        firstQuestion = faq[2].question!
+        firstQuestion = faq[faqNumber(num:3)].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
     }
     
     @IBAction func fourthButton(_ sender: Any) {
-        firstQuestion = faq[3].question!
+        firstQuestion = faq[faqNumber(num:4)].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
         
     }
     
     @IBAction func fifthButton(_ sender: Any) {
-        firstQuestion = faq[4].question!
+        firstQuestion = faq[faqNumber(num:5)].question!
         firstAnswer = "lolz"
         performSegue(withIdentifier: "findAnswer", sender: Any?.self)
         

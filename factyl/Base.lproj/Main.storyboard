@@ -10,6 +10,7 @@
     <customFonts key="customFonts">
         <array key="manrope.ttf">
             <string>Manrope-Bold</string>
+            <string>Manrope-ExtraBold</string>
             <string>Manrope-ExtraLight</string>
             <string>Manrope-Medium</string>
             <string>Manrope-Regular</string>
@@ -238,6 +239,25 @@
                                     <action selector="secondButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="BOC-or-yb4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="26N-Kf-fDq">
+                                <rect key="frame" x="70" y="436" width="257" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="how much would you spend on stocks?">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Manrope-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="thirdButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="TOZ-XU-bpW"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-cj-d1R">
                                 <rect key="frame" x="57" y="748" width="292" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -363,25 +383,35 @@
                                     <action selector="fourthButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="kE7-Pd-gsr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="26N-Kf-fDq">
-                                <rect key="frame" x="70" y="436" width="257" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3X-sl-a7U">
+                                <rect key="frame" x="122" y="826" width="55" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="how much would you spend on stocks?">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Manrope-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                    <color key="baseForegroundColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="thirdButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="TOZ-XU-bpW"/>
+                                    <action selector="backButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="No8-vn-zSq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUd-fU-sUz">
+                                <rect key="frame" x="227" y="826" width="55" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system">
+                                    <color key="baseForegroundColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rightButton:" destination="pRM-XF-RoH" eventType="touchUpInside" id="p6m-GJ-dwi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkp-P4-1lu">
+                                <rect key="frame" x="166" y="837" width="70" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Manrope-ExtraBold" family="Manrope" pointSize="20"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.42745098040000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ViH-Cm-S2U"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -392,6 +422,7 @@
                         <outlet property="button3" destination="26N-Kf-fDq" id="un9-S9-hfK"/>
                         <outlet property="button4" destination="Q2d-qW-GRX" id="aoY-c6-8Ya"/>
                         <outlet property="button5" destination="wL3-cj-d1R" id="hMl-O4-V0d"/>
+                        <outlet property="pageNumber" destination="Qkp-P4-1lu" id="jaq-eK-Yiz"/>
                         <segue destination="uYN-OY-eAV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="4G9-VH-NGG"/>
                     </connections>
                 </viewController>
@@ -941,6 +972,7 @@
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
