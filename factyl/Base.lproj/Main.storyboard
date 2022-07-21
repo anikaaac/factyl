@@ -669,9 +669,15 @@
                                     <navigationItem title="finance" id="lko-Zt-DpZ">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="homekit" catalog="system" style="plain" id="2Ze-71-JYH">
                                             <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jsd-qL-4s3"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="person.fill" catalog="system" style="plain" id="eF4-HO-27f">
                                             <color key="tintColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="WHq-xH-5d2" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="xgF-NQ-8z5"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -704,7 +710,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihB-O4-3jZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="1152"/>
+            <point key="canvasLocation" x="717" y="1150"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SPK-5Z-FFm">
@@ -878,8 +884,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="xgF-NQ-8z5"/>
         <segue reference="VYQ-zj-Mvc"/>
-        <segue reference="91S-oZ-JuC"/>
+        <segue reference="Jsd-qL-4s3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
