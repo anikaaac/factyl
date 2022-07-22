@@ -35,6 +35,7 @@ class financeViewController: UIViewController {
                     faq = coreDataFaqs
             }
         }
+        
         faq[0].question = ""
         faq[1].question = "how do you save?"
         faq[2].question = "what is a decent budget for you?"
@@ -75,6 +76,7 @@ class financeViewController: UIViewController {
         
            self.present(alertController, animated: true, completion: nil)
     }
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "bounds"{
             if let rect = (change?[NSKeyValueChangeKey.newKey] as? NSValue)?.cgRectValue {
@@ -91,7 +93,6 @@ class financeViewController: UIViewController {
 
     
     //buttons
-    
     @IBAction func rightButton(_ sender: Any) {
         counter += 1
         pageNumber.text = String(counter + 1)
