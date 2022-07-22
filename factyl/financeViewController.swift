@@ -6,12 +6,14 @@
 //
 
 import UIKit
+//import CoreData
 
 class financeViewController: UIViewController {
     //first button stuff
     var firstQuestion = ""
     var firstAnswer = ""
     
+//    fileprivate var entityForThisView: FaqCD? = nil
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -24,8 +26,13 @@ class financeViewController: UIViewController {
     let textView = UITextView(frame: CGRect.zero)
     
     var faq : [FaqCD] = []
-    var enteredText = ""
     var counter = 0
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        string1textfield.text = entityForThisView?.question![0]
+//        string2textfield.text = entityForThisView?.question![1]
+//        string3textfield.text = entityForThisView?.question![2]
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +42,23 @@ class financeViewController: UIViewController {
                     faq = coreDataFaqs
             }
         }
+        
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//          let context = appDelegate.persistentContainer.viewContext
+//          let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
+//          fetchRequest.entity = NSEntityDescription.entity(forEntityName: "TestEntity", in: context)
+//          guard let entities = try? context.fetch(fetchRequest) as! [FaqCD] else {
+//             print("Attempt to fetch data failed")
+//             return
+//           }
+//
+//        if entities.count > 0 {
+//             entityForThisView = entities[0]
+//           } else {
+//             entityForThisView = NSEntityDescription.insertNewObject(forEntityName: "FaqCD", into: context)
+//                 as? FaqCD
+//             entityForThisView?.question = ["","",""]
+//           }
         
         faq[0].question = ""
         faq[1].question = "how do you save?"
@@ -56,13 +80,13 @@ class financeViewController: UIViewController {
            alertController.addAction(cancelAction)
 
            let saveAction = UIAlertAction(title: "Submit", style: .default) { (action) in
-               self.enteredText = self.textView.text
+              let enteredText = self.textView.text
                alertController.view.removeObserver(self, forKeyPath: "bounds")
            }
        //CoreData
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let faqReal = FaqCD(entity: FaqCD.entity(), insertInto: context)
-            faqReal.question = enteredText
+            faqReal.question = self.textView.text
             try? context.save()
         }
     
@@ -95,12 +119,26 @@ class financeViewController: UIViewController {
     //buttons
     @IBAction func rightButton(_ sender: Any) {
         counter += 1
-        pageNumber.text = String(counter + 1)
+        pageNumber.text = String(counter+1)
+//
+//        button1.setTitle(faq[faqNumber(num: 1)].question, for: .normal)
+//        button2.setTitle(faq[faqNumber(num: 2)].question, for: .normal)
+//        button3.setTitle(faq[faqNumber(num: 3)].question, for: .normal)
+//        button4.setTitle(faq[faqNumber(num: 4)].question, for: .normal)
+//        button5.setTitle(faq[faqNumber(num: 5)].question, for: .normal)
     }
     
     @IBAction func backButton(_ sender: Any) {
-        counter -= 1
-        pageNumber.text = String(counter + 1)
+        if counter > 0{
+            counter -= 1
+        }
+        pageNumber.text = String(counter+1)
+//
+//        button1.setTitle(faq[faqNumber(num: 1)].question, for: .normal)
+//        button2.setTitle(faq[faqNumber(num: 2)].question, for: .normal)
+//        button3.setTitle(faq[faqNumber(num: 3)].question, for: .normal)
+//        button4.setTitle(faq[faqNumber(num: 4)].question, for: .normal)
+//        button5.setTitle(faq[faqNumber(num: 5)].question, for: .normal)
     }
     
     func faqNumber(num: Int) -> Int{
@@ -150,12 +188,6 @@ class financeViewController: UIViewController {
             //first
             addVC.question = firstQuestion
             addVC.answer = firstAnswer
-            
-//            addVC.questionTwo = secondQuestion
-//            addVC.answerTwo = secondAnswer
-            
-            
-            
         }
     }
     

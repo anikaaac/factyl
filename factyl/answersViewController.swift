@@ -18,19 +18,26 @@ class answersViewController: UIViewController {
     
     @IBOutlet weak var questionOne: UILabel!
     @IBOutlet weak var answerOne: UITextView!
+    @IBOutlet weak var likeButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         questionOne.text = ("\(question)")
         answerOne.text = ("\(answer)")
-        
-       // questionOne.text = ("\(questionTwo)")
-       // answerOne.text = ("\(answerTwo)")
 
-        // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func likeTapped(_ sender: Any) {
+        likeButton.setTitleColor(.red,for: .normal)
+    }
+    
+    @IBAction func shareTapped(_ sender: Any) {
+        let url = URL(string: "https://www.gmail.com/")
+        UIApplication.shared.open( url!, options: [:], completionHandler: nil)
+    }
+    
 
 }
