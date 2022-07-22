@@ -120,12 +120,12 @@ class financeViewController: UIViewController {
     @IBAction func rightButton(_ sender: Any) {
         counter += 1
         pageNumber.text = String(counter+1)
-//
-//        button1.setTitle(faq[faqNumber(num: 1)].question, for: .normal)
-//        button2.setTitle(faq[faqNumber(num: 2)].question, for: .normal)
-//        button3.setTitle(faq[faqNumber(num: 3)].question, for: .normal)
-//        button4.setTitle(faq[faqNumber(num: 4)].question, for: .normal)
-//        button5.setTitle(faq[faqNumber(num: 5)].question, for: .normal)
+
+        button1.setTitle(faq[faqNumber(num: 1)].question, for: .normal)
+        button2.setTitle(faq[faqNumber(num: 2)].question, for: .normal)
+        button3.setTitle(faq[faqNumber(num: 3)].question, for: .normal)
+        button4.setTitle(faq[faqNumber(num: 4)].question, for: .normal)
+        button5.setTitle(faq[faqNumber(num: 5)].question, for: .normal)
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -133,12 +133,12 @@ class financeViewController: UIViewController {
             counter -= 1
         }
         pageNumber.text = String(counter+1)
-//
-//        button1.setTitle(faq[faqNumber(num: 1)].question, for: .normal)
-//        button2.setTitle(faq[faqNumber(num: 2)].question, for: .normal)
-//        button3.setTitle(faq[faqNumber(num: 3)].question, for: .normal)
-//        button4.setTitle(faq[faqNumber(num: 4)].question, for: .normal)
-//        button5.setTitle(faq[faqNumber(num: 5)].question, for: .normal)
+
+        button1.setTitle(faq[faqNumber(num: 1)].question, for: .normal)
+        button2.setTitle(faq[faqNumber(num: 2)].question, for: .normal)
+        button3.setTitle(faq[faqNumber(num: 3)].question, for: .normal)
+        button4.setTitle(faq[faqNumber(num: 4)].question, for: .normal)
+        button5.setTitle(faq[faqNumber(num: 5)].question, for: .normal)
     }
     
     func faqNumber(num: Int) -> Int{

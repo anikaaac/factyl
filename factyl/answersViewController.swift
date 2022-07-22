@@ -31,7 +31,8 @@ class answersViewController: UIViewController {
     
     
     @IBAction func likeTapped(_ sender: Any) {
-        likeButton.setTitleColor(.red,for: .normal)
+//        likeButton.setTitleColor(UIColor.red,for: .normal)
+//        likeButton.titleLabel?.backgroundColor = UIColor.systemRed
     }
     
     @IBAction func shareTapped(_ sender: Any) {
